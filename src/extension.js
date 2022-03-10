@@ -16,6 +16,7 @@ function Extension(signer) {
   this.credentials = {
     accessKeyId: '',
     secretAccessKey: '',
+    sessionToken: '',
   };
   this.reqs = {};
 
@@ -89,6 +90,7 @@ function Extension(signer) {
     this.credentials = await browser.storage.sync.get({
       accessKeyId: '',
       secretAccessKey: '',
+      sessionToken: '',
     });
   };
   this.getCredentials();
